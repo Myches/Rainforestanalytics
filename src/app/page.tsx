@@ -30,12 +30,17 @@ export default function Login() {
       const token = response.data.data.access;
       localStorage.setItem("token", token);
       router.push("/dashboard");
-    } catch (err: any) {
-      setError(err.response?.data?.message || "Login failed");
+    } catch (err) {
+      if (axios.isAxiosError(err) && err.response?.data) {
+        setError((err.response.data as { message?: string }).message || "Login failed");
+      } else {
+        setError("An unknown error occurred");
+      }
     } finally {
       setLoading(false);
     }
   };
+  
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-[#f3f3f3] py-10 overflow-y-auto">
