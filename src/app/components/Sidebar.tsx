@@ -83,7 +83,7 @@ export default function Sidebar() {
         
         <div className="lg:flex-row flex flex-col items-center lg:space-x-2 space-x-0 lg:space-y-0 space-y-4 pb-5">
           <div className="lg:w-[56px] lg:h-[56px] w-[32px] h-[32px] border rounded-full bg-[#a0f333] border-none"></div>
-         
+          <div className="text-white lg:text-sm text-[6px] flex flex-col items-center justify-center"><p>mikeandorful.yahoo.com</p> <p>mike andorful </p> </div>
           <div >
           
           </div>

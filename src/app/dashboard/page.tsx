@@ -1,4 +1,5 @@
-"Use client"
+"use client"
+
 import Overview from "../components/Overview"
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -13,7 +14,7 @@ export default function DashboardPage(){
 
         <div>
             <Overview  />
-            <ToastContainer />
+            <ToastContainer  position="top-center"/>
         </div>
     )
 }
