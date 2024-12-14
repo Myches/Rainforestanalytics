@@ -1,8 +1,8 @@
-"use client"
+'use client'
+
 import { useEffect, useState } from 'react';
 import { fetchReportData } from '../components/ApiService';
 import { Report } from '../types/reportTypes';
-
 
 export const useReport = () => {
   const [report, setReport] = useState<Report | null>(null);
@@ -21,8 +21,13 @@ export const useReport = () => {
       try {
         const data = await fetchReportData(token);
         setReport(data);
-      } catch (err: any) {
-        setError(err.message);
+      } catch (err: unknown) {
+        
+        if (err instanceof Error) {
+          setError(err.message); 
+        } else {
+          setError('An unknown error occurred');
+        }
       } finally {
         setLoading(false);
       }

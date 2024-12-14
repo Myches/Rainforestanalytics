@@ -2,6 +2,16 @@
 
 import { PieChart, Pie, Cell, ResponsiveContainer } from "recharts";
 
+
+interface CustomizedLabelProps {
+  cx: number;
+  cy: number;
+  midAngle: number;
+  innerRadius: number;
+  outerRadius: number;
+  percent: number;
+  name: string;
+}
 const COLORS = ["#1e8e08", "#e08c39", "#9bf32a"];
 const RADIAN = Math.PI / 180;
 
@@ -13,7 +23,7 @@ const RADIAN = Math.PI / 180;
     outerRadius,
     percent,
     name,
-  }:any) => {
+  } : CustomizedLabelProps) => {
     const radius = innerRadius + (outerRadius - innerRadius) * 0.6;
     const x = cx + radius * Math.cos(-midAngle * RADIAN);
     const y = cy + radius * Math.sin(-midAngle * RADIAN);
