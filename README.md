@@ -10,7 +10,7 @@
 
 <h2 style="font-size: 24px;">Demo</h2>
 <ul>
-  <li><strong>Live Deployment:</strong> [Rainforest Analytics Dashboard](https://rainforestanalytics.netlify.app)</li>
+  <li><strong>Live Deployment:</strong> [Rainforest Analytics Dashboard](https://rainforestanalyticsdashboard.netlify.app/)</li>
   <li><strong>GitHub Repository:</strong> [Analytics Dashboard Repository](https://github.com/Myches/Rainforestanalytics.git)</li>
 </ul>
 
@@ -24,7 +24,7 @@
 <h3 style="font-size: 20px;">Steps to Run</h3>
 <pre>
 git clone https://github.com/Myches/Rainforestanalytics.git
-cd AnalyticsDashboard
+cd Rainforestanalytics
 npm install
 # or
 yarn install
