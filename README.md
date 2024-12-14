@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<h1 style="font-size: 30px;">Analytics Dashboard</h1>
+<p>A Next Js dashboard application built with TypeScript and Tailwind CSS, providing user authentication and interactive analytics.</p>
 
-## Getting Started
+<h2 style="font-size: 24px;">Features</h2>
+<ul>
+  <li><strong>User Authentication:</strong> Secure login to access the dashboard.</li>
+  <li><strong>Responsive Design:</strong> Optimized for devices of all sizes.</li>
+  <li><strong>Data Visualization:</strong> Interactive charts and graphs using Recharts.</li>
+</ul>
 
-First, run the development server:
+<h2 style="font-size: 24px;">Demo</h2>
+<ul>
+  <li><strong>Live Deployment:</strong> [Rainforest Analytics Dashboard](https://rainforestanalytics.netlify.app)</li>
+  <li><strong>GitHub Repository:</strong> [Analytics Dashboard Repository](https://github.com/Myches/Rainforestanalytics.git)</li>
+</ul>
 
-```bash
+<h2 style="font-size: 24px;">Run the Project Locally</h2>
+<h3 style="font-size: 20px;">Prerequisites</h3>
+<ul>
+  <li>Node.js (v16 or later)</li>
+  <li>npm or yarn package manager</li>
+</ul>
+
+<h3 style="font-size: 20px;">Steps to Run</h3>
+<pre>
+git clone https://github.com/Myches/Rainforestanalytics.git
+cd AnalyticsDashboard
+npm install
+# or
+yarn install
 npm run dev
 # or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+yarn run dev
+</pre>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<h2 style="font-size: 24px;">Deployment</h2>
+<p>The application is deployed on Netlify using the "Import from GitHub" feature. Follow the steps below to replicate the deployment process:</p>
+<ol>
+  <li><strong>Log in to Netlify:</strong> Go to <a href="https://www.netlify.com/">Netlify</a> and log in.</li>
+  <li><strong>Import Repository:</strong> Click on "Add New Site" > "Import an Existing Project" and connect your GitHub account.</li>
+  <li><strong>Select Repository:</strong> Choose AnalyticsDashboard from the list of repositories.</li>
+  <li><strong>Build Settings:</strong>
+    <ul>
+      <li>Build command: npm run build</li>
+      <li>Publish directory: dist (or build depending on your bundler setup)</li>
+    </ul>
+  </li>
+  <li><strong>Deploy:</strong> Click "Deploy Site," and Netlify will automatically build and host the application.</li>
+</ol>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+<h2 style="font-size: 24px;">Project Organization</h2>
+<p>The project is structured into directories for easy navigation and scalability:</p>
+<ul>
+  <li><strong>public/</strong>: Static assets, including the app's favicon and images.</li>
+  <li><strong>src/app</strong>: Main application code, including:
+    <ul>
+      <li><strong>components/</strong>: Reusable UI elements like Sidebar, LoadingSpinner, ChartData, etc.</li>
+      <li><strong>hooks/</strong>: Custom React hooks for reusable fetching logic (e.g., API fetching).</li>
+      <li><strong>layouts/</strong>: Shared layouts for pages (e.g., main layout).</li>
+      <li><strong>api/</strong>: API calls and business logic (e.g., authentication service).</li>
+      <li><strong>types/</strong>: TypeScript definitions for consistent data modeling.</li>
+    </ul>
+  </li>
+</ul>
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+<h2 style="font-size: 24px;">Key Technologies</h2>
+<ul>
+  <li>Next js</li>
+  <li>TypeScript</li>
+  <li>Axios</li>
+  <li>React Icons</li>
+  <li>Recharts (for charts and graphs)</li>
+  <li>Tailwind CSS</li>
+  <li>React Hook Form (for form validation)</li>
+  <li>React Loader Spinner (for loading states)</li>
+  <li>Jest (for unit testing)</li>
+</ul>
